@@ -2,7 +2,7 @@
 
 ## 說明文件
 ```
-[https://hackmd.io/bA80b0sqSPe2wX6vGGC2VA](https://hackmd.io/sYlcUD-wTimN0NsPrfGH1w)
+https://hackmd.io/sYlcUD-wTimN0NsPrfGH1w
 ```
 
 ### [題目一：選取 DOM](https://marcochiu.github.io/20251006_1/Q1.html)
