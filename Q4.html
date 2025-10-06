@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>題目四：創造、插入 DOM</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <h2>題目四：創造、插入 DOM</h2>
+    <p>請製作一個按鈕，當點擊時會在 HTML 文件中新增以下內容：</p>     
+    <button id="hellowbtn">新增你好世界</button>
+    <div class="hellowdiv"></div>
+    <pre class="prettyprint">
+// Todo 待編輯
+&lt;button&gt;新增你好世界&lt;/button&gt;
+// Document Added 新增
+&lt;p&gt;你好世界&lt;/p&gt;
+    </pre>
+
+    <h2>回答:</h2>
+    <pre class="prettyprint">
+        const hellowBtn = document.querySelector('#hellowbtn');
+        hellowBtn.addEventListener('click',function(e){
+            const createitem = document.createElement('p');
+            createitem.textContent="你好世界";
+            document.querySelector('.hellowdiv').appendChild(createitem);
+        });       
+    </pre>
+
+    <script>
+        const hellowBtn = document.querySelector('#hellowbtn');
+        hellowBtn.addEventListener('click',function(e){
+            const createitem = document.createElement('p');
+            createitem.textContent="你好世界";
+            document.querySelector('.hellowdiv').appendChild(createitem);
+        });
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</body>
+
+</html>
